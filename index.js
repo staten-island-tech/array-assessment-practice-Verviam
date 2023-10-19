@@ -84,11 +84,9 @@ const titles = [
   "Little Women",
 ];
 
-const authorBook = books.forEach(book => {
-  return (`${book.authorFirst} ${book.authorLast} wrote ${book.name} in ${book.publishDate}`);  
+books.forEach(book => {
+  console.log (`${book.authorFirst} ${book.authorLast} wrote ${book.name} in ${book.publishDate}`);  
 });
-
-console.log(authorBook);
 
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
