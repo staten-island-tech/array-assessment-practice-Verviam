@@ -84,13 +84,35 @@ const titles = [
   "Little Women",
 ];
 
+const authorBook = books.forEach(book => {
+  return (`${book.authorFirst} ${book.authorLast} wrote ${book.name} in ${book.publishDate}`);  
+});
+
+console.log(authorBook);
+
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
 
+function sortBookDate(a, b) {
+  books.sort((a, b) => a.publishDate - b.publishDate)
+};
+
+
+const sortedDates = books.forEach(book => {
+  return book.publishDate(sortBookDate);
+});
+
 //Sort books from oldest to most recent
 
+// function sortBookName(){
+  
+// }
+// const sortedName = books.forEach(book => 
+//   return (book.name(sortBook))
+//   )
 //sort books alphabetically
 
+ 
 //Find who wrote War and Peace
 
 //how many books were written before 1900?
@@ -100,3 +122,4 @@ const titles = [
 //was every book published within the last 100 years?
 
 //print a list of books that "includes" the genre historical
+
