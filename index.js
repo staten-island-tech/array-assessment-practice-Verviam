@@ -84,30 +84,24 @@ const titles = [
   "Little Women",
 ];
 
+const bookInfo = []
 books.forEach(book => {
-  console.log (`${book.authorFirst} ${book.authorLast} wrote ${book.name} in ${book.publishDate}`);  
+  bookInfo.push (`${book.authorFirst} ${book.authorLast} wrote ${book.name} in ${book.publishDate}`);  
 });
+console.log(bookInfo);
 
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
 
-function sortBookDate(a, b) {
-  books.sort((a, b) => a.publishDate - b.publishDate)
-};
-
-
-const sortedDates = books.forEach(book => {
-  return book.publishDate(sortBookDate);
-});
+const sortedDates = 
+  books.forEach(publishedDate => {
+  console.log(books.publishDate)
+  });
 
 //Sort books from oldest to most recent
 
-// function sortBookName(){
+
   
-// }
-// const sortedName = books.forEach(book => 
-//   return (book.name(sortBook))
-//   )
 //sort books alphabetically
 
  
